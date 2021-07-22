@@ -17,7 +17,7 @@ function App() {
         <Container>
           <div>
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={Home}/>
             </Switch>
             <Redirect to="/" />
           </div>

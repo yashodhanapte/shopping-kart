@@ -5,7 +5,7 @@ function Header() {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand > <NavLink to="/">Blog Forum</NavLink ></Navbar.Brand>
+                <Navbar.Brand > <NavLink to="/about">Blog Forum</NavLink ></Navbar.Brand>
                 <Nav className=" justify-content-end">
                 </Nav>
             </Navbar>
