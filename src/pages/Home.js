@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
-const Home = ({ name }) => {
+const Home = (props) => {
   // const [nameValue, setNameValue] = useState(name);
-
+  const {name}=props
+  console.log(props)
   const handleNameChange = (e) => {
     // setNameValue(e.target.value);
     

@@ -14,6 +14,8 @@ export const getData = () => dispatch =>{
       );
 };
   
-export const setName = () => dispatch => {
-  dispatch()
+export const setName = (payload) => {
+  return (dispatch)=>{
+    dispatch({type:SET_NAME,payload})
+  }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import {setName} from '../redux/actions/PostActions'
 import { connect } from 'react-redux'
 import Home from './Home';
 
@@ -7,7 +8,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = {
-    
+    setName:(name)=>dispatch(setName(name))
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
