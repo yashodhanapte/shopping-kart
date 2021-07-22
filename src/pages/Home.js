@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const Home = (props) => {
-  // const [nameValue, setNameValue] = useState(name);
-  const {name}=props
-  console.log(props)
+const Home = ({setName, name}) => {
   const handleNameChange = (e) => {
-    // setNameValue(e.target.value);
-    
+    if(setName){
+      setName(e.target.value)
+    }
   }
   return (
     <div>
