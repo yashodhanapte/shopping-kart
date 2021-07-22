@@ -1,4 +1,4 @@
-import {setName, getAllUsers} from '../redux/actions/PostActions'
+import {setName, getAllUsers} from '../../redux/actions/PostActions'
 import { connect } from 'react-redux'
 import Home from './Home';
 
