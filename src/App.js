@@ -2,6 +2,7 @@ import './App.css';
 import Header from "./components/Header";
 import Home from "./pages/Home/HomeContainer";
 import Container from 'react-bootstrap/Container';
+import About from './pages/About/About'
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,15 +15,11 @@ function App() {
     <div>
       <Router>
         <Header />
-        <Container>
-          <div>
             <Switch>
               <Route exact path="/" component={Home}/>
+              <Route exact path="/about" component={About}/>
             </Switch>
             <Redirect to="/" />
-          </div>
-        </Container>
-
       </Router>
     </div>
   );
