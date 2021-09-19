@@ -15,7 +15,7 @@ const Home = ({setName, name, getAllUsers, allUsers}) => {
   return (
     <div>
       {/* fetching value from reducer directly */}
-      <h1>{name ? name : null}</h1>
+      <h1>{name ? name : 'Zaaaaaaaaaaa'}</h1>
 
       {/* setting value in redux using action setName */}
       <input value={name} onChange={handleNameChange} />
