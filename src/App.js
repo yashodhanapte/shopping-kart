@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./components/Header";
 import Home from "./pages/Home/HomeContainer";
-import About from './pages/About/About'
+import ProductDetails from './pages/ProductDetails/ProductDetailsContainer';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,9 +15,9 @@ function App() {
         <Header />
             <Switch>
               <Route exact path="/" component={Home}/>
-              <Route exact path="/about" component={About}/>
+              <Route path="/productDetails/:id" component={ProductDetails}/>
             </Switch>
-            <Redirect to="/" />
+            {/* <Redirect to="/" /> */}
       </Router>
     </div>
   );

@@ -1,7 +1,8 @@
 import {
   GET_POST_DATA,
   SET_NAME,
-  GET_ALL_USERS
+  GET_ALL_USERS,
+  SET_SELECTED_PRODUCT
 } from "../actions/types";
 import axios from 'axios'
 import {baseURL} from '../../common/constant';
@@ -24,8 +25,13 @@ export const setName = (payload) => {
 export const getAllUsers = () => dispatch => {
   return axios.get(`${baseURL}users`).then(
     users => {
-      console.log(users, `users in action`);
       return dispatch({ type: GET_ALL_USERS, payload: users} )
     }
   )
+}
+
+export const setSelectedProduct = (payload) => {
+  return (dispatch)=>{
+    dispatch({type:SET_SELECTED_PRODUCT,payload})
+  }
 }

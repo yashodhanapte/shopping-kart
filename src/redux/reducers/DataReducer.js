@@ -1,30 +1,38 @@
 import {
     GET_POST_DATA,
     SET_NAME,
-    GET_ALL_USERS} from "../actions/types";
+    GET_ALL_USERS,
+    SET_SELECTED_PRODUCT
+} from "../actions/types";
 
-const initialState={
+const initialState = {
     postsList: {},
     name: 'john',
-    allUsers:[],
+    allUsers: [],
+    selectedProduct: {},
 }
-const DataReducer = (state = initialState,action) =>{
-    switch(action.type){
-        case GET_POST_DATA :
-             return{
+const DataReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case GET_POST_DATA:
+            return {
                 ...state,
-                postsList:action.payload
-             }
-             case SET_NAME :
-             return{
+                postsList: action.payload
+            }
+        case SET_NAME:
+            return {
                 ...state,
-                name:action.payload
-             }
-             case GET_ALL_USERS :
-                 return{
-                     ...state,
-                     allUsers:action.payload
-                 }
+                name: action.payload
+            }
+        case GET_ALL_USERS:
+            return {
+                ...state,
+                allUsers: action.payload
+            }
+        case SET_SELECTED_PRODUCT:
+            return {
+                ...state,
+                selectedProduct: action.payload
+            }
         default:
             return state
     }

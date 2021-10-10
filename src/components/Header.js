@@ -5,9 +5,12 @@ function Header() {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand > <NavLink to="/about">Blog Forum</NavLink ></Navbar.Brand>
-                <Nav className=" justify-content-end">
-                </Nav>
+                    <Navbar.Brand>
+                        <NavLink to="/">Home</NavLink >
+                        {/* <NavLink to="/productDetails"> Checkout</NavLink > */}
+                        {/* <NavLink to="/dashboard">Dashboard</NavLink > */}
+                    </Navbar.Brand>
+                <Nav className=" justify-content-end"></Nav>
             </Navbar>
 
         </div>
